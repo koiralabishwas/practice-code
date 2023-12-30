@@ -12,7 +12,7 @@ function Main(input) {
 	console.log('%d %s',a+b+c,s);
 }
 
-input = `3 4
+let input = `3 4
 `
 
 Main(input)
