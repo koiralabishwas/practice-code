@@ -3,13 +3,25 @@ function Main(input) {
 	// 1行目がinput[0], 2行目がinput[1], …に入る
 	input = input.split("\n");
 	console.log(input)
+
+  const c500v = 500
+  const c100v = 100
+  const c50v = 50
+
+  let count = 0
+
   
   // destructuring and storing each coins
   let c500 = parseInt(input[0])
   let c100 = parseInt(input[1])
   let c50 = parseInt(input[2])
-
   let amount = parseInt(input[3])
+
+  
+
+
+
+
 	
   console.log(c500,c100,c50,amount)
 }
