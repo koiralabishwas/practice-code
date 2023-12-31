@@ -8,7 +8,7 @@ function Main(input) {
 	// 1行目がinput[0], 2行目がinput[1], …に入る
 	input = input.split("\n");
 
-  const aInput = parseInt(input[0],10)
+  const aInput = parseInt(input[0],10) 
   const bInput = parseInt(input[1],10)
   const cInput = parseInt(input[2],10)
   const xInput = parseInt(input[3],10)
@@ -30,10 +30,10 @@ function Main(input) {
     }
   }
 
+  countWays(aInput,bInput,cInput,xInput)
+  console.log(count)
 }
 
-countWays(aInput,bInput,cInput,xInput)
-console.log(count)
 
 // custom inputs
 
