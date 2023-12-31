@@ -1,36 +1,41 @@
+let input =`30
+40
+50
+6000
+`
 // inputに入力データ全体が入る
 function Main(input) {
 	// 1行目がinput[0], 2行目がinput[1], …に入る
 	input = input.split("\n");
-	console.log(input)
 
-  const c500v = 500
-  const c100v = 100
-  const c50v = 50
+  const aInput = parseInt(input[0],10)
+  const bInput = parseInt(input[1],10)
+  const cInput = parseInt(input[2],10)
+  const xInput = parseInt(input[3],10)
 
   let count = 0
 
-  
-  // destructuring and storing each coins
-  let c500 = parseInt(input[0])
-  let c100 = parseInt(input[1])
-  let c50 = parseInt(input[2])
-  let amount = parseInt(input[3])
-
-  
+  // funtion  to  process
+  function countWays(A,B,C,X) {
+    for (let a = 0 ; a <= A ; a ++ ) {
+      for (let b = 0 ; b <= B ; b ++) {
+        for(let c = 0 ; c <= C ; c++) {
 
 
+          if (500 * a + 100 * b + 50 * c === X){
+            count ++
+          }
+        }
+      }
+    }
+  }
 
-
-	
-  console.log(c500,c100,c50,amount)
 }
+
+countWays(aInput,bInput,cInput,xInput)
+console.log(count)
+
 // custom inputs
-let input =`5
-1
-0
-150
-`
 
 Main(input)
 
