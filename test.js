@@ -1,6 +1,6 @@
 
 
-let n = 999999999999999999999999
+let n = 5
 
 let result = ''
 for (let i = 1; i <= n ; i ++) {
