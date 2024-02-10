@@ -2,7 +2,6 @@
 function Main(input) {
 	// 1行目がinput[0], 2行目がinput[1], …に入る
 	input = input.split("\n");
-	let tmp = input[1].split(" ");
 	
 }
 
