@@ -6,11 +6,10 @@ function Main(input) {
 }
 
 
-// custom inputs
-let input = `3 4
-`
-
-Main(input)
+// custom inputs and run
+	let input = `3 4
+	`
+	Main(input)
 
 // to run at atcoder
 // Main(require("fs").readFileSync("/dev/stdin", "utf8"));
