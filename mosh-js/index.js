@@ -1,7 +1,27 @@
-let iteration = 0
-do {
-  console.log(iteration + "times")
-  iteration ++
-} while (iteration !== 0)
+// divisible by 3 , fizz 
+// divisible by 5 , buzz
+// divisible by 5 and 3 , fizz buzz
+// else not divisible ? return the same number
+// or NaN too
 
-console.log( iteration === 100)
+function fizzbuzz (input) {
+  if (typeof(input) !== "number")
+    return NaN
+
+  if (input % 5 === 0 && input % 3 === 0) {
+      return "fizz buzz"
+    
+  }
+  if (input % 3 === 0) {
+    return 'fizz'
+  }
+
+  if ( input % 5 === 0)
+    return 'buzz'
+
+  return input
+}
+
+
+const output = fizzbuzz(3)
+console.log(output)
