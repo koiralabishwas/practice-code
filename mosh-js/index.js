@@ -1,27 +1,18 @@
-// divisible by 3 , fizz 
-// divisible by 5 , buzz
-// divisible by 5 and 3 , fizz buzz
-// else not divisible ? return the same number
-// or NaN too
+function checkSpeed(speed) {
+  const speedLimit = 70;
+  let pointsPerKm = 5;
 
-function fizzbuzz (input) {
-  if (typeof(input) !== "number")
-    return NaN
+  if (speed <= speedLimit) {
+    return "ok";
+  } else {
+    const points = Math.floor((speed - speedLimit) / pointsPerKm);
 
-  if (input % 5 === 0 && input % 3 === 0) {
-      return "fizz buzz"
-    
+    if (points >= 12) {
+      return "liscne suspended";
+    } else {
+      return points + " points";
+    }
   }
-  if (input % 3 === 0) {
-    return 'fizz'
-  }
-
-  if ( input % 5 === 0)
-    return 'buzz'
-
-  return input
 }
 
-
-const output = fizzbuzz(3)
-console.log(output)
+console.log(checkSpeed(120));
