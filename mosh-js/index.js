@@ -1,8 +1,8 @@
 function checkSpeed(speed) {
   const speedLimit = 70;
-  let pointsPerKm = 5;
+  const pointsPerKm = 5;
 
-  if (speed <= speedLimit) {
+  if (speed <= speedLimit + pointsPerKm) {
     return "ok";
   } else {
     const points = Math.floor((speed - speedLimit) / pointsPerKm);
@@ -15,4 +15,4 @@ function checkSpeed(speed) {
   }
 }
 
-console.log(checkSpeed(120));
+console.log(checkSpeed(71));
