@@ -1,24 +1,16 @@
-function countTruthy(array) {
-  // let counter = 0;
-  // for(let i = 0; i < array.length ; i ++) {
-  //   if (array[i]) {
-  //     counter ++
-  //   }
-  // }
-  // return counter;
-
-  
-  let counter = 0
-  for (let value of array) {
-    if (value) {
-      counter ++
-    }
-  }
-  return counter
-  
+const movie = {
+  title : 'a',
+  releaseYear : 2020,
+  rating : 4.5,
+  director : "b"
 }
 
-const array1 = [0, 1, 2, 3, null,3];
+function showProperties(obj) {
+  for (let key in obj) {
+    if (typeof(obj[key]) === "string") {
+      console.log( key , obj[key])
+    }
+  }
+}
 
-
-console.log(countTruthy(array1));
+console.log(showProperties(movie))
