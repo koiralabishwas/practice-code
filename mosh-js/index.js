@@ -1,18 +1,15 @@
-function checkSpeed(speed) {
-  const speedLimit = 70;
-  const pointsPerKm = 5;
+function showNumbers(limit) {
+  for (let i = 0 ; i <= limit ; i++) {
+    // if (i % 2 === 0) {
+    //   console.log(i , "even")
+    // } else {
+    //   console.log(i , "odd")
+    // }
 
-  if (speed <= speedLimit + pointsPerKm) {
-    return "ok";
-  } else {
-    const points = Math.floor((speed - speedLimit) / pointsPerKm);
+    const message = (i % 2 === 0) ? "EVEN" : "ODD"
 
-    if (points >= 12) {
-      return "liscne suspended";
-    } else {
-      return points + " points";
-    }
+    console.log(i , message)
   }
 }
 
-console.log(checkSpeed(130));
+showNumbers(10)
