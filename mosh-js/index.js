@@ -1,15 +1,24 @@
-function showNumbers(limit) {
-  for (let i = 0 ; i <= limit ; i++) {
-    // if (i % 2 === 0) {
-    //   console.log(i , "even")
-    // } else {
-    //   console.log(i , "odd")
-    // }
+function countTruthy(array) {
+  // let counter = 0;
+  // for(let i = 0; i < array.length ; i ++) {
+  //   if (array[i]) {
+  //     counter ++
+  //   }
+  // }
+  // return counter;
 
-    const message = (i % 2 === 0) ? "EVEN" : "ODD"
-
-    console.log(i , message)
+  
+  let counter = 0
+  for (let value of array) {
+    if (value) {
+      counter ++
+    }
   }
+  return counter
+  
 }
 
-showNumbers(10)
+const array1 = [0, 1, 2, 3, null,3];
+
+
+console.log(countTruthy(array1));
