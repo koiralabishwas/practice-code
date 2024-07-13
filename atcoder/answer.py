@@ -5,6 +5,10 @@ sys.stdin = open('input.txt', 'r')
 
 #########code from here here --------
 def main() :
-    N , A , B = map(int, input().split())
-    
+    n , a , b = map(int, input().split())
+    n = str(n).split()
+
+    print(n , a ,b)
+        
+
 main()
