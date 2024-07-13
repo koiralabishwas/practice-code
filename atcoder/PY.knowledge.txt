@@ -1,3 +1,6 @@
 
 make a list for data of a line :
   a1 a2 , a3 ..... aX =>    listA = list(map(int, input().split()))
+
+
+  

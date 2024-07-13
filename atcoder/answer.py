@@ -4,39 +4,18 @@ import sys
 sys.stdin = open('input.txt', 'r')
 
 #########code from here here --------
-len = int(input())
-datas = input().split(" ")
 
-# num list
-numlist = []
-for d in datas :
-    numlist.append(int(d))
+c500 = int(input())
+c100 = int(input())
+c50 = int(input())
+total = int(input())
 
+methods = 0
 
-# functions-------------
-def allEven(arrray) :
-    for i in arrray :
-        if i % 2 != 0 :
-            return False
-    return True
-
-def divBy2(array) :
-    return [i // 2 for i in array]
-
-# main
-counter = 0
-while allEven(numlist) :
-    numlist = divBy2(numlist)
-    counter += 1 
-
-    if all(v == 0 for v in numlist) :
-        break
-
-
-print(counter)
-
-
-
-
-    
-
+temp = 0
+for i in range(0 , c500) :
+    for j in range(0 , c100) :
+        for k in range( 0 , c50) :
+            print(c50)
+        print(c100)
+    print(c500)
