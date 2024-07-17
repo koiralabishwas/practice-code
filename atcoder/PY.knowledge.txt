@@ -1,6 +1,10 @@
 
-make a list for data of a line :
+###make a list for data of a string line :
   a1 a2 , a3 ..... aX =>    listA = list(map(int, input().split()))
+
+#### sort in decending
+  cards.sort(reverse=True)
+
 
 
   

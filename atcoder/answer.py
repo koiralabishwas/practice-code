@@ -5,22 +5,27 @@ sys.stdin = open('input.txt', 'r')
 
 #########code from here here --------
 def main():
-    n, a, b = map(int, input().split())
+    N = int(input()) # number of cards 
+    cards = list(map(int , input().split())) # card values
+    cards.sort(reverse=True)
+
+    alice = 0
+    bob = 0
 
 
-    sum_total = 0
+    i = 0
+    while i < len(cards) :
+        alice += cards[i]
+        if i + 1 < len(cards) :
+            bob += cards[i + 1]
+        else :
+            break 
+        i += 2
+    
+    # print(cards)
+    # print(alice)
+    # print(bob)
+    print(alice - bob)
 
-    for i in range(1, n + 1):
-        digit_sum = sum(int(digit) for digit in str(i))
-        if a <= digit_sum and digit_sum <= b:
-            sum_total += i
-    print(sum_total)
-                
-
-
-
-
-        
-        
 
 main()
