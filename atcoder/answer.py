@@ -5,6 +5,9 @@ sys.stdin = open('input.txt', 'r')
 
 #########code from here here --------
 def main():
-    print(input().replace(".",""))
+    input()
+    aData = list(map(int, input().split()))
+    bData = list(map(int, input().split()))
 
+    print(max(aData) + max(bData))
 main()

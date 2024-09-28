@@ -5,6 +5,12 @@
 #### sort in decending
   cards.sort(reverse=True)
 
+### populate a dictionary key valuse 
+    data = ["a","b","c"]
+    coordinates = {}
+
+    for i,j in enumerate(data) :
+        coordinates[j] = i
 
 
   
