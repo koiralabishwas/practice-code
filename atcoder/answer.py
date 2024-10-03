@@ -5,9 +5,17 @@ sys.stdin = open('input.txt', 'r')
 
 #########code from here here --------
 def main():
-    input()
-    aData = list(map(int, input().split()))
-    bData = list(map(int, input().split()))
+    times = list(map(int,input().split(" ")))
 
-    print(max(aData) + max(bData))
+    if times[1] < times[2] :
+        if times[1] > times[0] > times[2] :
+            print("Yes")
+        else:
+            print("No")
+    else:
+        if times[2] > times[0] > times[1] :
+            print("Yes")
+        else:
+            print("No")
+
 main()
