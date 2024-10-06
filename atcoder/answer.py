@@ -5,17 +5,15 @@ sys.stdin = open('input.txt', 'r')
 
 #########code from here here --------
 def main():
-    times = list(map(int,input().split(" ")))
+    N = int(input())
+    department = list(map(int, input().split()))
+    department.sort()
 
-    if times[1] < times[2] :
-        if times[1] > times[0] > times[2] :
-            print("Yes")
-        else:
-            print("No")
-    else:
-        if times[2] > times[0] > times[1] :
-            print("Yes")
-        else:
-            print("No")
+    half = round(sum(department) / 2)
 
+    group = 0
+    for i in range(N) :
+        if group < half :
+            group = group + department[i]
+            print(group)
 main()
