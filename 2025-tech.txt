@@ -1,0 +1,5 @@
+2025に習得したい技術
+1.OOP
+2.Dockerでの開発
+3.Backend応用開発
+4.Golang
