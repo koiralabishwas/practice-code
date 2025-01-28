@@ -5,15 +5,15 @@ sys.stdin = open('input.txt', 'r')
 
 #########code from here here --------
 def main():
-    N,D = map(int,input().split())
-    print(N,D)
+    N = int(input())
+    department = list(map(int, input().split()))
+    department.sort()
 
-    for i in range(1,D + 1):
-        heaviest = 0
-        for T,L in snakes :
-            weight = T * (L + i)
-            if weight >= heaviest :
-                heaviest = weight
-    
-    print(heaviest)
+    half = round(sum(department) / 2)
+
+    group = 0
+    for i in range(N) :
+        if group < half :
+            group = group + department[i]
+            print(group)
 main()
